@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="castle.windsor" Version="5.0.1" />
+    <PackageReference Include="moq" Version="4.13.0" />
+  </ItemGroup>
+
+</Project>
