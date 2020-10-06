@@ -20,7 +20,8 @@ namespace TestTools.TestForThisSolution.UnitTests
         [Fact]
         public void Dependencies_are_Mocks_Message_Method_are_Called_On_dependency1()
         {
-            var container = new WindsorContainer().AsAutoMockContainerFromScannedSolutionAssemblies();
+            var container = new WindsorContainer()
+                                    .AsAutoMockContainerFromScannedSolutionAssemblies();
             var sut = container.Resolve<RootClass>();
             string expectedMessage = "Message As expected";
 
